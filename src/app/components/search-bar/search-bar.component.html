@@ -1,0 +1,8 @@
+<div class="search-container">
+  <img routerLink="/" width="35" height="35" [src]="logo" alt="logo" class="logo" />
+
+  <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <input class="search-input" name="search" ngModel type="text" placeholder="Search for a game..."/>
+    <button class="search-button">Search</button>
+  </form>
+</div>
